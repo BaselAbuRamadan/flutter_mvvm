@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm/presentation/resourcese/routs_manager.dart';
 import 'package:flutter_mvvm/presentation/resourcese/theme_manager.dart';
 
 class MyApp extends StatefulWidget {
@@ -19,7 +20,11 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(theme: getApplicationTheme(),);
+    return MaterialApp(
+      onGenerateRoute: RouteGenerator.getRoute,
+      initialRoute: Routes.splashRoute,
+      theme: getApplicationTheme(),
+    );
   }
 }
 
