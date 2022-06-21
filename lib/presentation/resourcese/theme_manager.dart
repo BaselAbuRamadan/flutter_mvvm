@@ -40,12 +40,14 @@ ThemeData getApplicationTheme(){
      ),
     //text theme
      textTheme: TextTheme(
-       displayLarge: getLightStyle(color: ColorManager.white,
+       displayLarge: getSemiBoldStyle(color: ColorManager.darkGrey,
        fontSize: FontSize.s22),
        headlineLarge: getSemiBoldStyle(color:ColorManager.darkGrey,
        fontSize: FontSize.s16),
+         headlineMedium: getRegularStyle(color:ColorManager.darkGrey,
+             fontSize: FontSize.s14),
          titleMedium: getMediumStyle(
-             color: ColorManager.lightGrey, fontSize: FontSize.s14),
+             color: ColorManager.primary, fontSize: FontSize.s16),
          bodyLarge: getRegularStyle(color: ColorManager.grey1),
          bodySmall: getRegularStyle(color: ColorManager.grey)
      ),
